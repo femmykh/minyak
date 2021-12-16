@@ -13,6 +13,7 @@ f_json = json.load(f)
 # membuka file csv
 df_csv = pd.read_csv('produksi_minyak_mentah.csv')
 df_json = pd.DataFrame.from_dict(f_json, orient = 'columns')
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # NOMOR 1
 # mencari list kode sampah (kode negara yang tidak digunakan)
